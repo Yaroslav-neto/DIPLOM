@@ -1,0 +1,632 @@
+{
+    "name": "БАГ TC_NEWS_20",
+    "start": 1768836976315,
+    "stop": 1768836995536,
+    "stage": "finished",
+    "description": "Вставить в поле «Заголовок» строку из 255 символов. В поле «Описание» вставить текст объемом 2000+ символов",
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "Error performing 'single click' on view 'view.getId() is <2131231198/ru.iteco.fmhandroid:id/save_button>'.",
+        "trace": "androidx.test.espresso.PerformException: Error performing 'single click' on view 'view.getId() is <2131231198/ru.iteco.fmhandroid:id/save_button>'.\n\tat androidx.test.espresso.PerformException$Builder.build(PerformException.java:1)\n\tat androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:9)\n\tat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)\n\tat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)\n\tat androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)\n\tat androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)\n\tat ru.iteco.fmhandroid.ui.components.BaseComponent.clickOn(BaseComponent.java:159)\n\tat ru.iteco.fmhandroid.ui.components.CreateNewComponent.clickSaveNewButton(CreateNewComponent.java:120)\n\tat ru.iteco.fmhandroid.ui.AdminPanelPageNegativeTest.shouldCorrectlySaveNewsWithExtremelyLongTextTest(AdminPanelPageNegativeTest.java:314)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)\n\tat androidx.test.internal.runner.junit4.statement.RunAfters.evaluate(RunAfters.java:61)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)\n\tat io.qameta.allure.android.runners.AllureAndroidJUnit4.run(AllureAndroidJUnitRunners.kt:29)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:444)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)\nCaused by: java.lang.RuntimeException: Action will not be performed because the target view does not match one or more of the following constraints:\n(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <90> percent of the view's area)\nTarget view: \"MaterialButton{id=2131231198, res-name=save_button, desc=Сохранить, visibility=VISIBLE, width=926, height=132, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@26aad61, tag=null, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=4243.0, text=Сохранить, input-type=0, ime-target=false, has-links=false, is-checked=false}\"\n\tat androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:20)\n\tat androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n"
+    },
+    "steps": [
+        {
+            "name": "Вход в аккаунт",
+            "start": 1768836976715,
+            "stop": 1768836976715,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Мы уже в системе, ввод данных не нужен",
+            "start": 1768836981906,
+            "stop": 1768836981906,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Переход на страницу 'News'",
+            "start": 1768836981906,
+            "stop": 1768836981907,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие кнопки 'Меню'",
+            "start": 1768836981907,
+            "stop": 1768836981907,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Клик по ID {idRes}",
+            "start": 1768836981908,
+            "stop": 1768836981908,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ожидание завершения загрузки (исчезновения лоадера)",
+            "start": 1768836981908,
+            "stop": 1768836981908,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Клик по тексту из ресурсов",
+            "start": 1768836982371,
+            "stop": 1768836982371,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие кнопки перехода на страницу 'Создать новость'",
+            "start": 1768836982860,
+            "stop": 1768836982860,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Клик по ID {idRes}",
+            "start": 1768836982860,
+            "stop": 1768836982861,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ожидание завершения загрузки (исчезновения лоадера)",
+            "start": 1768836982861,
+            "stop": 1768836982861,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие кнопки добавления новости",
+            "start": 1768836983383,
+            "stop": 1768836983383,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Клик по ID {idRes}",
+            "start": 1768836983383,
+            "stop": 1768836983383,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ожидание завершения загрузки (исчезновения лоадера)",
+            "start": 1768836983384,
+            "stop": 1768836983384,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка корректности открытия страницы создания новости",
+            "start": 1768836983852,
+            "stop": 1768836983852,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Групповая проверка видимости по ID ресурсов",
+            "start": 1768836983852,
+            "stop": 1768836983852,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка ID 2131231142 на хинт: Заголовок",
+            "start": 1768836983867,
+            "stop": 1768836983867,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка ID 2131231137 на хинт: Дата публикации",
+            "start": 1768836983873,
+            "stop": 1768836983873,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Заполнение полей: DJ5whyf8fR64HOOz34OAlTIhor69WyzYcnURH2L1X6q9KBvB4zIUlyOQdcg2rtMjiHyGhHmvUtrVSNoLyT0unkMwQylLUdfMhJ5L0XicXsJ23oeYFzAr0BUNKo8l2BS5pc0H9mmysrREt5irBsF85yoxzEMB34L0SCxTp3dclOYm3oezMTEHE1nhSoTp5uLWuPpFrOvcYu1KcgAwzQJIWZnHSX1sH4BJZ1TuaYSiF1gwrgCx6WB9fR8bHsNpdZN",
+            "start": 1768836983876,
+            "stop": 1768836983876,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка корректности открытия страницы создания новости",
+            "start": 1768836983876,
+            "stop": 1768836983877,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Групповая проверка видимости по ID ресурсов",
+            "start": 1768836983877,
+            "stop": 1768836983877,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка ID 2131231142 на хинт: Заголовок",
+            "start": 1768836983885,
+            "stop": 1768836983885,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверка ID 2131231137 на хинт: Дата публикации",
+            "start": 1768836983889,
+            "stop": 1768836983889,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Заполнение поля текстом",
+            "start": 1768836983896,
+            "stop": 1768836983896,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Заполнение поля текстом",
+            "start": 1768836983922,
+            "stop": 1768836983922,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Заполнение поля текстом",
+            "start": 1768836983977,
+            "stop": 1768836983977,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Заполнение поля текстом",
+            "start": 1768836984006,
+            "stop": 1768836984006,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Заполнение поля текстом",
+            "start": 1768836984056,
+            "stop": 1768836984056,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажатие кнопки 'Сохранить'",
+            "start": 1768836984496,
+            "stop": 1768836984496,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Клик по ID {idRes}",
+            "start": 1768836984496,
+            "stop": 1768836984496,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ожидание завершения загрузки (исчезновения лоадера)",
+            "start": 1768836984496,
+            "stop": 1768836984496,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Начинаем очистку списка новостей",
+            "start": 1768836984506,
+            "stop": 1768836984506,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ожидание завершения загрузки (исчезновения лоадера)",
+            "start": 1768836989699,
+            "stop": 1768836989699,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Короткая проверка панели управления",
+            "start": 1768836989773,
+            "stop": 1768836989773,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Контент не найден, проверяем кнопку 'ОБНОВИТЬ'",
+            "start": 1768836994921,
+            "stop": 1768836994921,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "ОШИБКА ПРИ ОЧИСТКЕ: No views in hierarchy found matching: (view.getId() is <2131230911/ru.iteco.fmhandroid:id/control_panel_news_retry_material_button> and an instance of android.widget.TextView and view.getText() equals string from resource id: <2131820770> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))\n\nView Hierarchy:\n+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=2280, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x10302fe\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=FORCE_DRAW_STATUS_BAR_BACKGROUND}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2148, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@10e38e0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908692, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@5a2a799, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=2065, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@d36de3f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=83.0, child-count=1} \n|\n+--->FitWindowsLinearLayout{id=2131230784, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=2065, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ec88e6a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+---->ViewStubCompat{id=2131230801, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6c51f5b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=2065, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@d28b0d1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+----->FragmentContainerView{id=2131231101, res-name=nav_host_fragment, visibility=VISIBLE, width=1080, height=2065, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a2c5637, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+------>FragmentContainerView{id=2131231101, res-name=nav_host_fragment, visibility=VISIBLE, width=1080, height=2065, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@8b6890d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+------->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2065, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@8119a10, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-------->ConstraintLayout{id=2131230897, res-name=container_custom_app_bar_include_on_fragment_create_edit_news, visibility=VISIBLE, width=1080, height=252, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c669b28, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7} \n|\n+--------->AppCompatImageButton{id=2131231039, res-name=main_menu_image_button, desc=Главное меню, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@3e67041, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+--------->AppCompatImageButton{id=2131230735, res-name=about_back_image_button, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@297c9e6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+--------->MaterialTextView{id=2131230920, res-name=custom_app_bar_title_text_view, visibility=VISIBLE, width=224, height=67, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@8093b27, tag=null, root-is-layout-requested=false, has-input-connection=false, x=428.0, y=44.0, text=Создание, input-type=0, ime-target=false, has-links=false} \n|\n+--------->MaterialTextView{id=2131230919, res-name=custom_app_bar_sub_title_text_view, visibility=VISIBLE, width=289, height=97, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@31e41d4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=396.0, y=111.0, text=Новости, input-type=0, ime-target=false, has-links=false} \n|\n+--------->AppCompatImageView{id=2131231308, res-name=trademark_image_view, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@9e8cf7d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+--------->AppCompatImageButton{id=2131230842, res-name=authorization_image_button, desc=Авторизация, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f069e72, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+--------->AppCompatImageButton{id=2131231160, res-name=our_mission_image_button, desc=Наша Миссия, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@84462c3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-------->ScrollView{id=-1, visibility=VISIBLE, width=1080, height=1813, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b7e679, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=252.0, child-count=1} \n|\n+--------->MaterialCardView{id=-1, visibility=VISIBLE, width=1014, height=4562, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a80681f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=33.0, y=33.0, is-checked=false, child-count=1} \n|\n+---------->ConstraintLayout{id=-1, visibility=VISIBLE, width=1014, height=4562, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d3fc804, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=8} \n|\n+----------->TextInputLayout{id=2131231120, res-name=news_item_category_text_input_layout, visibility=VISIBLE, width=926, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@a3191ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=55.0, child-count=1} \n|\n+------------>FrameLayout{id=-1, visibility=VISIBLE, width=926, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@bdf8822, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=15.0, child-count=4} \n|\n+------------->AppCompatTextView{id=2131231297, res-name=textinput_placeholder, visibility=INVISIBLE, width=926, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@5f382b3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->MaterialAutoCompleteTextView{id=2131231119, res-name=news_item_category_text_auto_complete_text_view, visibility=VISIBLE, width=926, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@3f36070, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x10001 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=11, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], x=0.0, y=0.0, text=Зарплата, hint=Категория, input-type=65537, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ca25fe9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-------------->CheckableImageButton{id=2131231293, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@192046e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->AppCompatTextView{id=2131231298, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@399970f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=143, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@906139c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=783.0, y=0.0, child-count=3} \n|\n+-------------->AppCompatTextView{id=2131231299, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@83811a5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+-------------->FrameLayout{id=-1, visibility=VISIBLE, width=143, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@fddf97a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--------------->CheckableImageButton{id=2131231291, res-name=text_input_end_icon, desc=Показать раскрывающееся меню, visibility=VISIBLE, width=132, height=132, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@1e2952b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=11.0, y=10.0, is-checked=false} \n|\n+-------------->CheckableImageButton{id=2131231292, res-name=text_input_error_icon, desc=Ошибка, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@12ecd88, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+----------->TextInputLayout{id=2131231143, res-name=news_item_title_text_input_layout, visibility=VISIBLE, width=926, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@2bd2321, tag=null, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=278.0, child-count=1} \n|\n+------------>FrameLayout{id=-1, visibility=VISIBLE, width=926, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@7c23346, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=15.0, child-count=4} \n|\n+------------->AppCompatTextView{id=2131231297, res-name=textinput_placeholder, visibility=INVISIBLE, width=926, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7735907, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->TextInputEditText{id=2131231142, res-name=news_item_title_text_input_edit_text, visibility=VISIBLE, width=926, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@3a73a34, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0xc000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Заголовок label=null packageName=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=11, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_HEAD=0, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END=0, android.support.text.emoji.emojiCompat_replaceAll=false, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SURROUNDING_TEXT=DJ5whyf8fR64HOOz34OAlTIhor69WyzYcnURH2L1X6q9KBvB4zIUlyOQdcg2rtMjiHyGhHmvUtrVSNoLyT0unkMwQylLUdfMhJ5L0XicXsJ23oeYFzAr0BUNKo8l2BS5pc0H9mmysrREt5irBsF85yoxzEMB34L0SCxTp3dclOYm3oezMTEHE1nhSoTp5uLWuPpFrOvcYu1KcgAwzQJIWZnHSX1sH4BJZ1TuaYSiF1gwrgCx6WB9fR8bHsNpdZN}] hintLocales=null contentMimeTypes=null ], x=0.0, y=0.0, text=DJ5whyf8fR64HOOz34OAlTIhor69WyzYcnURH2L1X6q9KBvB4zIUlyOQdcg2rtMjiHyGhHmvUtrVSNoLyT0unkMwQylLUdfMhJ5L0XicXsJ23oeYFzAr0BUNKo8l2BS5pc0H9mmysrREt5irBsF85yoxzEMB34L0SCxTp3dclOYm3oezMTEHE1nhSoTp5uLWuPpFrOvcYu1KcgAwzQJIWZnHSX1sH4BJZ1TuaYSiF1gwrgCx6WB9fR8bHsNpdZN, hint=Заголовок, input-type=1, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a27d05d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-------------->CheckableImageButton{id=2131231293, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@95e3dd2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->AppCompatTextView{id=2131231298, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6627ea3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@f97c5a0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=926.0, y=0.0, child-count=3} \n|\n+-------------->AppCompatTextView{id=2131231299, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b961559, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+-------------->FrameLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@53e651e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--------------->CheckableImageButton{id=2131231291, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@19461ff, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->CheckableImageButton{id=2131231292, res-name=text_input_error_icon, desc=Ошибка, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c439bcc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+----------->TextInputLayout{id=2131231122, res-name=news_item_create_date_text_input_layout, visibility=VISIBLE, width=441, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@e09ae15, tag=null, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=501.0, child-count=1} \n|\n+------------>FrameLayout{id=-1, visibility=VISIBLE, width=441, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@667b52a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=15.0, child-count=4} \n|\n+------------->AppCompatTextView{id=2131231297, res-name=textinput_placeholder, visibility=INVISIBLE, width=441, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@bd71f1b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->TextInputEditText{id=2131231137, res-name=news_item_publish_date_text_input_edit_text, visibility=VISIBLE, width=441, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ff4a8b8, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x4c000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Дата публикации label=null packageName=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=11, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_HEAD=0, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END=0, android.support.text.emoji.emojiCompat_replaceAll=false, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SURROUNDING_TEXT=19.01.2026}] hintLocales=null contentMimeTypes=null ], x=0.0, y=0.0, text=19.01.2026, hint=Дата публикации, input-type=131073, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ce41691, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-------------->CheckableImageButton{id=2131231293, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@123f9f6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->AppCompatTextView{id=2131231298, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@cbe91f7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@9a79864, tag=null, root-is-layout-requested=false, has-input-connection=false, x=441.0, y=0.0, child-count=3} \n|\n+-------------->AppCompatTextView{id=2131231299, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@e228acd, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+-------------->FrameLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@28dbf82, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--------------->CheckableImageButton{id=2131231291, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7405693, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->CheckableImageButton{id=2131231292, res-name=text_input_error_icon, desc=Ошибка, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@977d6d0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+----------->TextInputLayout{id=2131231139, res-name=news_item_publish_time_text_input_layout, visibility=VISIBLE, width=441, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@5a06c9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=529.0, y=501.0, child-count=1} \n|\n+------------>FrameLayout{id=-1, visibility=VISIBLE, width=441, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@cdc51ce, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=15.0, child-count=4} \n|\n+------------->AppCompatTextView{id=2131231297, res-name=textinput_placeholder, visibility=INVISIBLE, width=441, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@e0fc8ef, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->TextInputEditText{id=2131231138, res-name=news_item_publish_time_text_input_edit_text, visibility=VISIBLE, width=441, height=153, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@3cb8ffc, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x4c000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Время label=null packageName=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=11, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_HEAD=0, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END=0, android.support.text.emoji.emojiCompat_replaceAll=false, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SURROUNDING_TEXT=15:36}] hintLocales=null contentMimeTypes=null ], x=0.0, y=0.0, text=15:36, hint=Время, input-type=131073, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c734685, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-------------->CheckableImageButton{id=2131231293, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c6fbcda, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->AppCompatTextView{id=2131231298, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@1ba050b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@b3fafe8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=441.0, y=0.0, child-count=3} \n|\n+-------------->AppCompatTextView{id=2131231299, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@726c601, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+-------------->FrameLayout{id=-1, visibility=VISIBLE, width=0, height=153, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@19ccca6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--------------->CheckableImageButton{id=2131231291, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@481e6e7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->CheckableImageButton{id=2131231292, res-name=text_input_error_icon, desc=Ошибка, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@d53e294, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+----------->TextInputLayout{id=2131231127, res-name=news_item_description_text_input_layout, visibility=VISIBLE, width=926, height=3288, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@e38c13d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=724.0, child-count=1} \n|\n+------------>FrameLayout{id=-1, visibility=VISIBLE, width=926, height=3273, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b390d32, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=15.0, child-count=4} \n|\n+------------->AppCompatTextView{id=2131231297, res-name=textinput_placeholder, visibility=INVISIBLE, width=926, height=3273, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ffc0a83, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->TextInputEditText{id=2131231126, res-name=news_item_description_text_input_edit_text, visibility=VISIBLE, width=926, height=3273, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@dd69400, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Описание label=null packageName=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=11, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_HEAD=0, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END=0, android.support.text.emoji.emojiCompat_replaceAll=false, androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SURROUNDING_TEXT=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}] hintLocales=null contentMimeTypes=null ], x=0.0, y=0.0, text=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, hint=Описание, input-type=131073, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=3273, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d753439, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-------------->CheckableImageButton{id=2131231293, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@de6ca7e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->AppCompatTextView{id=2131231298, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@86acbdf, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+------------->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=3273, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d10f02c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=926.0, y=0.0, child-count=3} \n|\n+-------------->AppCompatTextView{id=2131231299, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@76bdaf5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false} \n|\n+-------------->FrameLayout{id=-1, visibility=VISIBLE, width=0, height=3273, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@421108a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--------------->CheckableImageButton{id=2131231291, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@9da46fb, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+-------------->CheckableImageButton{id=2131231292, res-name=text_input_error_icon, desc=Ошибка, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b2e318, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false} \n|\n+----------->SwitchMaterial{id=2131231265, res-name=switcher, visibility=VISIBLE, width=281, height=132, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=false, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@dec3171, tag=null, root-is-layout-requested=false, has-input-connection=false, x=88.0, y=4056.0, text=Активна, input-type=0, ime-target=false, has-links=false, is-checked=true} \n|\n+----------->MaterialButton{id=2131231198, res-name=save_button, desc=Сохранить, visibility=VISIBLE, width=926, height=132, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@26aad61, tag=null, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=4243.0, text=Сохранить, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+----------->MaterialButton{id=2131230862, res-name=cancel_button, desc=Отмена, visibility=VISIBLE, width=926, height=132, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@307ab56, tag=null, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=4375.0, text=Отмена, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=1080, height=132, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@afc57d7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=2148.0} \n|\n+->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=1080, height=83, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@77f18c4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} ",
+            "start": 1768836994987,
+            "stop": 1768836994987,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "broken",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "de30f369-4411-4c91-ad95-4d59059f6154",
+    "historyId": "74e1ce8a0200e581409c24c82fb7661a",
+    "fullName": "ru.iteco.fmhandroid.ui.AdminPanelPageNegativeTest.shouldCorrectlySaveNewsWithExtremelyLongTextTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AdminPanelPageNegativeTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldCorrectlySaveNewsWithExtremelyLongTextTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AdminPanelPageNegativeTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(350)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        },
+        {
+            "name": "story",
+            "value": "Проверка корректности сохранения и отображения новости с очень длинным заголовоком и экстремально длинным текстом(граничные значения)."
+        },
+        {
+            "name": "epic",
+            "value": "Страница Контрольная панель"
+        },
+        {
+            "name": "feature",
+            "value": "Негативные проверки"
+        }
+    ]
+}
