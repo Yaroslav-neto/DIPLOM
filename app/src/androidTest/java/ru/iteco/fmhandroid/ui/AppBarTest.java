@@ -93,7 +93,7 @@ public class AppBarTest extends BaseTest {
     @Test
     @Story("Проверка навигации на страницы Новости-О нас.")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Баг TC_AP_06")
+    @DisplayName("TC_AP_06")
     @Description("Проверить переход на страницы Новости-О нас и видимость их элементов.")
     public void goNewsToAboutPageTest() {
         appBarComponent
@@ -107,7 +107,7 @@ public class AppBarTest extends BaseTest {
     @Test
     @Story("Проверка навигации на страницы О нас-Новости.")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Баг TC_AP_07")
+    @DisplayName("TC_AP_07")
     @Description("Проверить переход на страницы О нас-Новости и видимость их элементов.")
     public void goAboutToNewsPageTest() {
         appBarComponent

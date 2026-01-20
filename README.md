@@ -5,6 +5,11 @@
 	OS: Windows 10 Pro
 	Установить Allute 2 версии.
 
+ #### Среда
+ 	** Android Studio Narwhal 3 Feature Drop | 2025.1.3
+	** gradle jdk 17
+	** Android jdk 29
+
  ##### Эмулятор (Device):
 	Pixel 4 (API 29), 4 Cores, 6GB Data Partition.
 

@@ -87,7 +87,7 @@ public class AuthPositiveTest extends BaseTest {
     @Test
     @Story("Подтверждение наличия и кликабельности элементов: кнопка входа.")
     @Severity(SeverityLevel.MINOR)
-    @DisplayName("TC_AUTH_07 БАГ кликабельности")
+    @DisplayName("TC_AUTH_07")
     @Description("Проверить наличие кнопки \"Войти\" и её активность/ disabled-состояние.")
     public void visionClickableEnterButtonTest() {
         authorizationPage
@@ -138,7 +138,7 @@ public class AuthPositiveTest extends BaseTest {
     @Test
     @Story("Успешная авторизация валидный логин с спецсимволом в конце.")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("БАГ TC_AUTH_12  флакающая(какие-то символы не обрабатывает)")
+    @DisplayName("TC_AUTH_12")
     @Description("Ввести логин со спецсимволом (например \" ' ; : / \\ | [ ] ( ) { } < > , = + * & % $ # @ ! ?) в конце.")
     public void shouldLoginWithDirtyTailInUsernameTest() {
         DataHelper.AuthInfo client = new DataHelper.AuthInfo(

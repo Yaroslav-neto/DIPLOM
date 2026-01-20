@@ -49,6 +49,7 @@ captures/
 ### Gradle ###
 !gradle/wrapper/gradle-wrapper.jar
 
+allure-results/
 !allure-results.zip
 /DIPLOM/work/
 Result.md.backup

@@ -86,7 +86,7 @@ public class CreateNewComponentTest extends BaseTest {
     @Test
     @Story("Создание новости с валидными даннымии и поиск ее по номеру позиции.")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("TC_CC_03")
+    @DisplayName("TC_CC_03 флак")
     @Description("Создания новости с поиском ее по номеру позиции")
     public void createAndVerifyNews() {
         DataHelper.NewInfo newsData = DataHelper.getFirstTestNewsInfo();

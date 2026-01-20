@@ -46,17 +46,17 @@ public class AdminPanelPagePositiveTest extends BaseTest {
                 .appBarNews.clickEditButton();
     }
 
-    @After
-    public void tearDown() {
-        try {
-            adminPanelPage.deleteAllNews()
-                    .assertAdminPanelPageVisible();
-        } catch (Exception e) {
-            Allure.step("ОШИБКА ПРИ ОЧИСТКЕ: " + e.getMessage(), Status.BROKEN);
-
-            android.util.Log.e("TEST_AFTER_TEARDOWN", "Очистка новостей не удалась", e);
-        }
-    }
+//    @After
+//    public void tearDown() {
+//        try {
+//            adminPanelPage.deleteAllNews()
+//                    .assertAdminPanelPageVisible();
+//        } catch (Exception e) {
+//            Allure.step("ОШИБКА ПРИ ОЧИСТКЕ: " + e.getMessage(), Status.BROKEN);
+//
+//            android.util.Log.e("TEST_AFTER_TEARDOWN", "Очистка новостей не удалась", e);
+//        }
+//    }
 
     @Test
     @Story("Видимость страницы Контрольная панель")
@@ -71,7 +71,7 @@ public class AdminPanelPagePositiveTest extends BaseTest {
     @Test
     @Story("Обновление пустой страницы Контрольной панели")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("БАГ TC_NEWS_21")
+    @DisplayName("TC_NEWS_21")
     @Description("Удалить все новости и обновить страницу свайпом")
     public void shouldDeleteAllNewsTest() {
         adminPanelPage.deleteAllNews()
@@ -84,7 +84,7 @@ public class AdminPanelPagePositiveTest extends BaseTest {
     @Test
     @Story("Проверка даты создания и публикации созданной новости")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("БАГ TC_NEWS_23")
+    @DisplayName("TC_NEWS_23")
     @Description("Создать новость и проверить совпадение даты создания и публикации")
     public void shouldEqualPublicationAtCreationDateTest() {
         DataHelper.NewInfo testNewFirst = DataHelper.getFirstTestNewsInfo();
@@ -177,7 +177,7 @@ public class AdminPanelPagePositiveTest extends BaseTest {
     @Test
     @Story("Проверка отображения созданных новостей на странице Контрольная панель")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("БАГ TC_NEWS_24")
+    @DisplayName("TC_NEWS_24")
     @Description("Создать 5 новостей и проверить их отображения на странице Контрольная панель в прямом и обратном порядке")
     public void shouldVisibleNewsDirectReverseOrderAdminPageTest() {
         DataHelper.NewInfo futureNews = DataHelper.getFutureTestNewsInfo(1);
@@ -290,9 +290,8 @@ public class AdminPanelPagePositiveTest extends BaseTest {
                 .waitUntilDoesNotExistNewComp(futureNews, 10000)
                 .waitUntilDoesNotExistNewComp(oldThirtyDaysNews, 10000)
 
-                .as(MainPage.class)
-                .clickAllNewsLink()
-                .appBarNews.clickEditButton()
+                .as(AppBarNewsComponent.class)
+                .clickEditButton()
                 .assertAdminPanelPageVisible()
                 .deleteAllNews()
                 .clickRefreshButton()
@@ -309,7 +308,7 @@ public class AdminPanelPagePositiveTest extends BaseTest {
     @Test
     @Story("Проверка отображения созданных новостей на странице Главная")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("TC_NEWS_27")
+    @DisplayName("TC_NEWS_27 флак")
     @Description("Создать 5 новостей и проверить их отображения на странице Новости в прямом и обратном порядке")
     public void shouldVisibleNewsDirectReverseOrderMainPageTest() {
 
@@ -366,7 +365,7 @@ public class AdminPanelPagePositiveTest extends BaseTest {
     @Test//комплексная проверка
     @Story("Проверка отображения созданных новостей на всех страницах E2E")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("БАГ из TC_NEWS_24 TC_NEWS_28")
+    @DisplayName("TC_NEWS_28")
     @Description("Создать 5 новостей и проверить их отображения на страницах")
     public void newsE2ESortingTest() {
         DataHelper.NewInfo futureNews = DataHelper.getFutureTestNewsInfo(1);
