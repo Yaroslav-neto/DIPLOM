@@ -138,7 +138,7 @@ public class AuthPositiveTest extends BaseTest {
     @Test
     @Story("Успешная авторизация валидный логин с спецсимволом в конце.")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("TC_AUTH_12")
+    @DisplayName("TC_AUTH_12 флак")
     @Description("Ввести логин со спецсимволом (например \" ' ; : / \\ | [ ] ( ) { } < > , = + * & % $ # @ ! ?) в конце.")
     public void shouldLoginWithDirtyTailInUsernameTest() {
         DataHelper.AuthInfo client = new DataHelper.AuthInfo(
