@@ -83,6 +83,7 @@
 	ID_Test_Case: TC_NEWS_29
 	ID_Test_Case: TC_NEWS_30
 	ID_Test_Case: TC_NEWS_31
+	ID_Test_Case: TC_NEWS_32
 	ID_Test_Case: TC_ABOUT_06
 	ID_Test_Case: TC_ABOUT_07
 	ID_Test_Case: TC_ABOUT_08

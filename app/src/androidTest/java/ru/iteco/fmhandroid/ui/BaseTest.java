@@ -7,6 +7,37 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import org.junit.Rule;
 
 public abstract class BaseTest {
+//заглушка
+//    private MockWebServer mockWebServer;
+
+//    @Rule
+//    public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
+//            new ActivityScenarioRule<>(AppActivity.class);
+
+//    @Before
+//    public void setupMockServer() throws IOException {
+//        mockWebServer = new MockWebServer();
+//
+//        // пустой список
+//        String emptyResponse = "{\"pages\": 1, \"elements\": []}";
+//
+//        // Настраиваем сервер всегда отвечать 200 OK с пустыми данными
+//        mockWebServer.enqueue(new MockResponse()
+//                .setResponseCode(200)
+//                .setBody(emptyResponse)
+//                .addHeader("Content-Type", "application/json"));
+//
+//        // Запускаем сервер на порту 8080 (или другом)
+//        mockWebServer.start(8080);
+//    }
+//
+//    @After
+//    public void tearDownMockServer() throws IOException {
+//        if (mockWebServer != null) {
+//            mockWebServer.shutdown();
+//        }
+//    }
+
 
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =

@@ -1,5 +1,6 @@
 package ru.iteco.fmhandroid.ui.data;
 
+import androidx.annotation.CheckResult;
 import androidx.annotation.IdRes;
 import androidx.annotation.StringRes;
 

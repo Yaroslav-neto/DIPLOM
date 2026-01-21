@@ -65,7 +65,7 @@ public class NewsPageTest extends BaseTest {
     @Test
     @Story("Проверка синхронизации контента страниц Главная и Новости.")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("TC_NEWS_31")
+    @DisplayName("TC_NEWS_32 флак")
     @Description("Сверка интеграции: сверяем первые 3 новости в общем списке на странице Новости и на Главной")
     public void newsIntegrationTest() {
         List<DataHelper.NewsPreview> expectedNews = newsPage
